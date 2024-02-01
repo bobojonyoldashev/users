@@ -1,0 +1,161 @@
+/* SCROLL */
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    margin: 3px;
+    padding: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+/* GENERALS */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+    color: inherit;
+}
+
+html,
+body {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+}
+
+/* MAIN */
+
+.root {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 100px;
+}
+
+.root-title {
+    text-align: center;
+    border: 2px solid black;
+}
+
+.main {
+    display: flex;
+    height: 80vh;
+}
+
+.users-list {
+    border: 2px solid black;
+    border-top: none;
+    padding: 10px 15px;
+    width: 30%;
+}
+
+.users-title {
+    text-align: center;
+    padding-block: 10px;
+}
+
+.user {
+    cursor: pointer;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 7px;
+}
+
+.about-btn {
+    padding: 4px;
+    background: whitesmoke;
+    border: none;
+    border-radius: 50%;
+}
+
+.about-btn:hover {
+    box-shadow: 3px 3px 3px gray;
+}
+
+.post-list {
+    width: 70%;
+    padding: 10px 15px;
+    overflow-y: scroll;
+}
+
+.post-title {
+    text-align: center;
+    padding-block: 10px;
+}
+
+.comment-btn {
+    border-radius: 7px;
+}
+
+.comment-btn:hover {
+    transform: scale(1.05);
+}
+
+/* INFO MODAL */
+
+.info-modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #0009;
+}
+
+.info-content {
+    position: absolute;
+    background: white;
+    left: 33%;
+    top: 33%;
+    border-radius: 15px;
+    padding: 10px;
+    width: 33%;
+    height: 35%;
+}
+
+.x-btn {
+    padding: 3px 6px;
+    position: absolute;
+    left: 93%;
+    top: 4%;
+}
+
+.x-btn:hover {
+    box-shadow: 3px 3px 3px gray;
+}
+
+/* COMMENT CONTENT */
+
+.comment-content {
+    overflow-y: scroll;
+}
